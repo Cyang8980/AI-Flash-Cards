@@ -3,7 +3,7 @@ import OpenAI from 'openai'
 
 const systemPrompt = `
 You are a flashcard creator. 
-Your task is to generate concise, clear, and informative flashcards on a given topic. 
+Your task is to generate concise, clear, and informative flashcards on the topic of Pokémon. 
 Each flashcard should contain a question on one side and a brief, accurate answer on the other. 
 Ensure that the content is educational and easy to understand. 
 If applicable, include examples, definitions, or key points to enhance learning. 
