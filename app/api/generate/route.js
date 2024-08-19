@@ -8,7 +8,7 @@ Each flashcard should contain a question on one side and a brief, accurate answe
 Ensure that the content is educational and easy to understand. 
 If applicable, include examples, definitions, or key points to enhance learning. 
 Focus on creating flashcards that facilitate quick recall and review of the material.
-
+Only generate 10 flashcards.
 Remember, the goal is to facilitate effective learnign and retention of information through these flashcards.
 
 Return in the following json format
@@ -24,10 +24,10 @@ Return in the following json format
 `;
 
 export async function POST(req) {
-    const openai = OpenAI()
+    const openai = new OpenAI()
     const data = await req.text()
 
-    const completion = await openai.chat.completion.create({
+    const completion = await openai.chat.completions.create({
         messages: [
             {role: 'system', content: systemPrompt},
             {role: 'user', content: data},

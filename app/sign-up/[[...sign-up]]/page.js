@@ -25,9 +25,10 @@ export default function SignUpPage() {
                         </Typography>
                         <Button color="inherit">
                             <Link href="/signup" passHref>
-                                Sign Up
+                                Sign In
                             </Link>
                         </Button>
+
                     </Toolbar>
                 </AppBar>
 
@@ -45,7 +46,7 @@ export default function SignUpPage() {
                         boxShadow: 3 // Box shadow for better visibility
                     }}
                 >
-                    <Typography variant="h4" gutterBottom sx={{ color: 'white' }}>Sign In</Typography>
+                    <Typography variant="h4" gutterBottom sx={{ color: 'white' }}>Sign Up</Typography>
                     <SignIn />
                 </Box>
             </Container>
