@@ -44,7 +44,7 @@ export default function Home() {
           <Typography variant="h5">
             The best way to study Pokémon fun facts that nobody asked for
           </Typography>
-          <Button variant="contained" color="primary" sx={{ mt: 2 }}>
+          <Button href = "/generate" variant="contained" color="primary" sx={{ mt: 2 }}>
             Get Started
           </Button>
         </Box>
