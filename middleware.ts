@@ -1,8 +1,7 @@
-import { clerkMiddleware } from "@clerk/nextjs/server";
-
-export default clerkMiddleware();
+import { clerkMiddleware } from '@clerk/nextjs/server';
 
 export const config = {
+  runtime: 'nodejs',  // Ensure it runs in Node.js environment
   matcher: [
     // Skip Next.js internals and all static files, unless found in search params
     '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
@@ -10,3 +9,5 @@ export const config = {
     '/(api|trpc)(.*)',
   ],
 };
+
+export default clerkMiddleware();
