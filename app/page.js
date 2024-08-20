@@ -44,9 +44,11 @@ export default function Home() {
           <Typography variant="h5">
             The best way to study Pokémon fun facts that nobody asked for
           </Typography>
-          <Button href = "/generate" variant="contained" color="primary" sx={{ mt: 2 }}>
-            Get Started
-          </Button>
+          <SignedIn>
+            <Button href="/generate" variant="contained" color="primary" sx={{ mt: 2 }}>
+              Get Started
+            </Button>
+          </SignedIn>
         </Box>
 
         {/* Features Section */}
